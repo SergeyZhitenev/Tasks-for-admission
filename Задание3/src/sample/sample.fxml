@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="StGame" text="Игра не активна" />
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="748.0">
+   <children>
+      <ImageView fx:id="v1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#viewMc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Sunduk.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="v2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#viewMc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Sunduk.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="v3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#viewMc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Sunduk.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="v4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#viewMc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Sunduk.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="v5" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#viewMc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Sunduk.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+      <Button mnemonicParsing="false" onAction="#onStart" text="Start" />
+      <Button mnemonicParsing="false" onAction="#onPay" text="Pay" />
+      <VBox prefHeight="400.0" prefWidth="150.0">
+         <children>
+                  <Label text="На счете денег:" />
+            <Label fx:id="Mon" text="1" />
+         </children>
+      </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
